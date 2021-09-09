@@ -1,0 +1,113 @@
+
+
+
+
+.wrapper{
+    width: 100%;
+    height: 500px; 
+    position: relative;
+}
+
+
+.wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.foreground{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    z-index: 50;
+    text-align: center
+
+}
+.foreground h1{
+    color: whitesmoke;
+    display: block;
+}
+.foreground button{
+    margin-right: 40px;
+    display: inline;
+}
+
+
+.home-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+
+    padding-top: 190px;
+
+}
+
+
+
+
+
+footer a{
+    color: white;
+}
+
+footer{
+    background-color:rgb(34, 34, 34);
+    color:#fff;
+    overflow: hidden;
+    margin-top: 300px;
+    bottom: 0;
+
+}
+.footer_info{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    padding:50px 0;
+}
+
+.footer_info .footer_width{
+    padding:0 15px;
+}
+.footer_info h2{
+    margin-bottom: 20px;
+}
+.about, .Contact{
+    width:40%;
+}
+.link{
+    width:20%;
+}
+.link ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.link ul li a:hover{
+    color:#8ECEE5;
+}
+.Contact ul li{
+    display:flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Contact ul li span{
+    margin-right: 15px;
+}
+
+@media screen and (max-width:992px){
+    .about, .Contact{
+        width:35%;
+    }
+    .link{
+        width:30%;
+    }
+}
+@media screen and (max-width:767px){
+    .about, .Contact, .link{
+        width:100%;
+        margin-bottom: 30px;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+}
+
